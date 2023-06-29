@@ -389,6 +389,7 @@ void DoSerialise(SerialiserType &ser, ProgramUniformValue &el)
     case eGL_INT_SAMPLER_3D:
     case eGL_INT_SAMPLER_CUBE:
     case eGL_INT_SAMPLER_CUBE_MAP_ARRAY:
+    case eGL_SAMPLER_EXTERNAL_OES:
     case eGL_INT_SAMPLER_1D_ARRAY:
     case eGL_INT_SAMPLER_2D_ARRAY:
     case eGL_INT_SAMPLER_2D_MULTISAMPLE:
@@ -781,6 +782,7 @@ static void ForAllProgramUniforms(SerialiserType *ser, CaptureState state,
           case eGL_SAMPLER_BUFFER:
           case eGL_SAMPLER_2D_RECT:
           case eGL_SAMPLER_2D_RECT_SHADOW:
+          case eGL_SAMPLER_EXTERNAL_OES:
           case eGL_INT_SAMPLER_1D:
           case eGL_INT_SAMPLER_2D:
           case eGL_INT_SAMPLER_3D:
@@ -1100,6 +1102,7 @@ static void ForAllProgramUniforms(SerialiserType *ser, CaptureState state,
           case eGL_SAMPLER_BUFFER:
           case eGL_SAMPLER_2D_RECT:
           case eGL_SAMPLER_2D_RECT_SHADOW:
+          case eGL_SAMPLER_EXTERNAL_OES:
           case eGL_INT_SAMPLER_1D:
           case eGL_INT_SAMPLER_2D:
           case eGL_INT_SAMPLER_3D:
